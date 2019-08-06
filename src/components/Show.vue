@@ -173,234 +173,16 @@
           <div class="nav_t">全部商品分类</div>
           <div class="leftNav">
             <ul>
-              <li>
+              <li v-for="cates in cate">
                 <div class="fj">
                   <span class="n_img"><span></span><img src="../assets/images/nav1.png" /></span>
-                  <span class="fl">进口食品、生鲜</span>
+                  <span class="fl">{{cates.name}}</span>
                 </div>
                 <div class="zj">
                   <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav2.png" /></span>
-                  <span class="fl">食品、饮料、酒</span>
-                </div>
-                <div class="zj" style="top:-40px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力2</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav3.png" /></span>
-                  <span class="fl">母婴、玩具、童装</span>
-                </div>
-                <div class="zj" style="top:-80px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力3</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav4.png" /></span>
-                  <span class="fl">家居、家庭清洁、纸品</span>
-                </div>
-                <div class="zj" style="top:-120px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力4</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav5.png" /></span>
-                  <span class="fl">美妆、个人护理、洗护</span>
-                </div>
-                <div class="zj" style="top:-160px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力5</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav6.png" /></span>
-                  <span class="fl">女装、内衣、中老年</span>
-                </div>
-                <div class="zj" style="top:-200px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力6</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav7.png" /></span>
-                  <span class="fl">鞋靴、箱包、腕表配饰</span>
-                </div>
-                <div class="zj" style="top:-240px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力7</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav8.png" /></span>
-                  <span class="fl">男装、运动</span>
-                </div>
-                <div class="zj" style="top:-280px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力8</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav9.png" /></span>
-                  <span class="fl">手机、小家电、电脑</span>
-                </div>
-                <div class="zj" style="top:-320px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力9</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
-                    </div>
-                  </div>
-                  <div class="zj_r">
-                    <a href="#"><img src="../assets/images/n_img1.jpg" width="236" height="200" /></a>
-                    <a href="#"><img src="../assets/images/n_img2.jpg" width="236" height="200" /></a>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav10.png" /></span>
-                  <span class="fl">礼品、充值</span>
-                </div>
-                <div class="zj" style="top:-360px;">
-                  <div class="zj_l">
-                    <div class="zj_l_c">
-                      <h2>零食 / 糖果 / 巧克力10</h2>
-                      <a href="#">坚果</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">巧克力</a>|
-                      <a href="#">口香糖</a>|<a href="#">海苔</a>|<a href="#">鱼干</a>|<a href="#">蜜饯</a>|<a href="#">红枣</a>|
-                      <a href="#">蜜饯</a>|<a href="#">红枣</a>|<a href="#">牛肉干</a>|<a href="#">蜜饯</a>|
+                    <div class="zj_l_c" v-for="son in cates.son">
+                      <h2>{{son.name}}</h2>
+                      <a href="#" v-for="son1 in son.son">{{son1.name}}</a>
                     </div>
                   </div>
                   <div class="zj_r">
@@ -839,17 +621,17 @@
         <img src="../assets/images/mban_1.jpg" width="1200" height="110" />
       </div>
       <!--Begin 进口 生鲜 Begin-->
-      <div class="i_t mar_10">
+      <div v-for="(value,key) in floor">
+      <div class="i_t mar_10" >
         <span class="floor_num">1F</span>
-        <span class="fl">进口 <b>·</b> 生鲜</span>
+        <span class="fl">{{key}}</span>
         <span class="i_mores fr"><a href="#">进口咖啡</a>&nbsp; &nbsp; &nbsp; <a href="#">进口酒</a>&nbsp; &nbsp; &nbsp; <a href="#">进口母婴</a>&nbsp; &nbsp; &nbsp; <a href="#">新鲜蔬菜</a>&nbsp; &nbsp; &nbsp; <a href="#">新鲜水果</a></span>
       </div>
       <div class="content">
-
         <div class="fresh_mid">
           <ul>
-            <li>
-              <div class="name"><a href="#">新鲜美味  进口美食</a></div>
+            <li v-for="name in value">
+              <div class="name"><a href="#">{{name}}</a></div>
               <div class="price">
                 <font>￥<span>198.00</span></font> &nbsp; 26R
               </div>
@@ -930,300 +712,9 @@
         </div>
 
       </div>
+      </div>
       <!--End 进口 生鲜 End-->
 
-      <!-- Begin 广告 Begin -->
-      <div class="content mar_20">
-        <img width="1200" height="110" src="../assets/images/mban_1.jpg">
-      </div>
-      <!-- End 广告 End -->
-
-      <!--Begin 食品饮料 Begin-->
-      <div class="i_t mar_10">
-        <span class="floor_num">2F</span>
-        <span class="fl">食品饮料</span>
-        <span class="i_mores fr"><a href="#">咖啡</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">休闲零食</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">饼干糕点</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">冲饮谷物</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">营养保健</a></span>
-      </div>
-      <div class="content">
-
-        <div class="fresh_mid">
-          <ul>
-            <li>
-              <div class="name"><a href="#">莫斯利安酸奶</a></div>
-              <div class="price">
-                <font>￥<span>96.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/food_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">莫斯利安酸奶</a></div>
-              <div class="price">
-                <font>￥<span>96.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/food_2.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">莫斯利安酸奶</a></div>
-              <div class="price">
-                <font>￥<span>96.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/food_3.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">莫斯利安酸奶</a></div>
-              <div class="price">
-                <font>￥<span>96.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/food_4.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">莫斯利安酸奶</a></div>
-              <div class="price">
-                <font>￥<span>96.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/food_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">莫斯利安酸奶</a></div>
-              <div class="price">
-                <font>￥<span>96.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/food_6.jpg" width="185" height="155" /></a></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End 食品饮料 End-->
-
-      <!-- Begin 广告 Begin -->
-      <div class="content mar_20">
-        <img width="1200" height="110" src="../assets/images/mban_1.jpg">
-      </div>
-      <!-- End 广告 End -->
-
-      <!--Begin 个人美妆 Begin-->
-      <div class="i_t mar_10">
-        <span class="floor_num">3F</span>
-        <span class="fl">个人美妆</span>
-        <span class="i_mores fr"><a href="#">洗发护发</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">面膜</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">洗面奶</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">香水</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">沐浴露</a></span>
-      </div>
-      <div class="content">
-        <div class="fresh_mid">
-          <ul>
-            <li>
-              <div class="name"><a href="#">美宝莲粉饼</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 16R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/make_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">美宝莲粉饼</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 16R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/make_2.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">美宝莲粉饼</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 16R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/make_3.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">美宝莲粉饼</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 16R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/make_4.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">美宝莲粉饼</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 16R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/make_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">美宝莲粉饼</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 16R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/make_6.jpg" width="185" height="155" /></a></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End 个人美妆 End-->
-      <div class="content mar_20">
-        <img src="../assets/images/mban_1.jpg" width="1200" height="110" />
-      </div>
-      <!--Begin 母婴玩具 Begin-->
-      <div class="i_t mar_10">
-        <span class="floor_num">4F</span>
-        <span class="fl">母婴玩具</span>
-        <span class="i_mores fr"><a href="#">营养品</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">孕妈背带裤</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">儿童玩具</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">婴儿床</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">喂奶器</a></span>
-      </div>
-      <div class="content">
-        <div class="fresh_mid">
-          <ul>
-            <li>
-              <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 20R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/baby_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 20R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/baby_2.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 20R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/baby_3.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 20R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/baby_4.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 20R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/baby_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">儿童玩具  变形金刚</a></div>
-              <div class="price">
-                <font>￥<span>260.00</span></font> &nbsp; 20R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/baby_6.jpg" width="185" height="155" /></a></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End 母婴玩具 End-->
-      <!--Begin 家居生活 Begin-->
-      <div class="i_t mar_10">
-        <span class="floor_num">5F</span>
-        <span class="fl">家居生活</span>
-        <span class="i_mores fr"><a href="#">床上用品</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">家纺布艺</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">餐具</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">沙发</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">汽车用品</a></span>
-      </div>
-      <div class="content">
-        <div class="fresh_mid">
-          <ul>
-            <li>
-              <div class="name"><a href="#">品质蓝色沙发</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 50R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/home_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">品质蓝色沙发</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 50R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/home_2.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">品质蓝色沙发</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 50R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/home_3.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">品质蓝色沙发</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 50R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/home_4.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">品质蓝色沙发</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 50R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/home_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">品质蓝色沙发</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 50R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/home_6.jpg" width="185" height="155" /></a></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End 家居生活 End-->
-      <!--Begin 数码家电 Begin-->
-      <div class="i_t mar_10">
-        <span class="floor_num">6F</span>
-        <span class="fl">数码家电</span>
-        <span class="i_mores fr"><a href="#">手机</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">苹果</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">华为手机</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">洗衣机</a>&nbsp; &nbsp; | &nbsp; &nbsp;<a href="#">数码配件</a></span>
-      </div>
-      <div class="content">
-        <div class="fresh_mid">
-          <ul>
-            <li>
-              <div class="name"><a href="#">乐视高清电视</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/tel_1.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">乐视高清电视</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/tel_2.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">乐视高清电视</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/tel_3.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">乐视高清电视</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/tel_4.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">乐视高清电视</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/tel_5.jpg" width="185" height="155" /></a></div>
-            </li>
-            <li>
-              <div class="name"><a href="#">乐视高清电视</a></div>
-              <div class="price">
-                <font>￥<span>2160.00</span></font> &nbsp; 25R
-              </div>
-              <div class="img"><a href="#"><img src="../assets/images/tel_6.jpg" width="185" height="155" /></a></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--End 数码家电 End-->
       <!--Begin 猜你喜欢 Begin-->
       <div class="i_t mar_10">
         <span class="fl">猜你喜欢</span>
@@ -1412,16 +903,30 @@
 </template>
 
 <script>
-    axios.get('http://localhost/laravel/blog/public/show/show')
-        .then(function (response) {
-            console.log(response.data);
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-
     export default {
-        name: "Show",
+        name: 'Index',
+        data(){
+            return {
+                msg: [],
+                cate:22,
+                floor:[]
+            }
+        },
+        mounted () {
+
+            axios.get('http://localhost/laravel/blog/public/home/tree')
+                .then(response => (this.cate = response.data))
+                .catch(function (error) {
+                    console.log(error);
+                });
+
+            axios.get('http://localhost/laravel/blog/public/home/tree1')
+                .then(response => (this.floor = response.data))
+                .catch(function (error) {
+                    console.log(error);
+                });
+        },
+
 
     }
 </script>
