@@ -490,6 +490,7 @@ function MagicZoom_findZooms() {
             smallImg.id = "sim" + rand;
             var bigCont = document.createElement("DIV");
             bigCont.id = "bc" + rand;
+
             re = new RegExp(/opacity(\s+)?:(\s+)?(\d+)/i);
             matches = re.exec(aels[i].rel);
             var opacity = 50;

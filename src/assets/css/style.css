@@ -2242,16 +2242,16 @@ table.car_tab tr td.car_th{
 	background-color:#f6f6f6;
 }
 .c_s_img{
-	width:73px; height:73px; overflow:hidden; float:left; display:inline; margin-right:0px; border:1px solid #eaeaea;
+	width:73px; height:73px; overflow:hidden; float:left; display:inline; margin-right:10px; border:1px solid #eaeaea;
 }
 .c_num{
-	width:100px; height:21px; overflow:hidden;
+	width:84px; height:21px; overflow:hidden;
 }
 .car_ipt{
 	width:42px; height:21px; line-height:21px\9; background-color:#FFF; color:#555555; font-size:14px; text-align:center; font-family:"Microsoft YaHei"; float:left; padding:0; border:0;
 }
 .car_btn_1{
-	width:21px; height:21px; overflow:hidden; background:url(../images/jian.gif) no-repeat center top; float:left; border:1; border-right:1px solid #cccccc; cursor:pointer;
+	width:21px; height:21px; overflow:hidden; background:url(../images/jian.gif) no-repeat center top; float:left; border:0; border-right:1px solid #cccccc; cursor:pointer;
 }
 .car_btn_2{
 	width:21px; height:21px; overflow:hidden; background:url(../images/jia.gif) no-repeat center top; float:left; border:0; border-left:1px solid #cccccc; cursor:pointer;
@@ -2401,19 +2401,6 @@ ul.pay li.checked .ch_img{
 .btm img{
 	display:inline-block; margin:15px 5px 5px 5px; border:1px solid #d9d9d9; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
 }
-.input{
-  width:15px; height:15px;
-}
-.input1{
-  width:15px; height:15px;
-}
-.button{
-  background:#fff;border: 1px solid #cdcdcd;
-}
-.jj{
-  width:100px; height: 25px;
-}
-
 
 
 

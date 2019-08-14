@@ -1,132 +1,9 @@
 <template>
   <div>
-    <div class="soubg">
-      <div class="sou">
-        <!--Begin 所在收货地区 Begin-->
-        <span class="s_city_b">
-        	<span class="fl">送货至：</span>
-            <span class="s_city">
-            	<span>四川</span>
-                <div class="s_city_bg">
-                	<div class="s_city_t"></div>
-                    <div class="s_city_c">
-                    	<h2>请选择所在的收货地区</h2>
-                        <table border="0" class="c_tab" style="width:235px; margin-top:10px;" cellspacing="0" cellpadding="0">
-                          <tr>
-                            <th>A</th>
-                            <td class="c_h"><span>安徽</span><span>澳门</span></td>
-                          </tr>
-                          <tr>
-                            <th>B</th>
-                            <td class="c_h"><span>北京</span></td>
-                          </tr>
-                          <tr>
-                            <th>C</th>
-                            <td class="c_h"><span>重庆</span></td>
-                          </tr>
-                          <tr>
-                            <th>F</th>
-                            <td class="c_h"><span>福建</span></td>
-                          </tr>
-                          <tr>
-                            <th>G</th>
-                            <td class="c_h"><span>广东</span><span>广西</span><span>贵州</span><span>甘肃</span></td>
-                          </tr>
-                          <tr>
-                            <th>H</th>
-                            <td class="c_h"><span>河北</span><span>河南</span><span>黑龙江</span><span>海南</span><span>湖北</span><span>湖南</span></td>
-                          </tr>
-                          <tr>
-                            <th>J</th>
-                            <td class="c_h"><span>江苏</span><span>吉林</span><span>江西</span></td>
-                          </tr>
-                          <tr>
-                            <th>L</th>
-                            <td class="c_h"><span>辽宁</span></td>
-                          </tr>
-                          <tr>
-                            <th>N</th>
-                            <td class="c_h"><span>内蒙古</span><span>宁夏</span></td>
-                          </tr>
-                          <tr>
-                            <th>Q</th>
-                            <td class="c_h"><span>青海</span></td>
-                          </tr>
-                          <tr>
-                            <th>S</th>
-                            <td class="c_h"><span>上海</span><span>山东</span><span>山西</span><span class="c_check">四川</span><span>陕西</span></td>
-                          </tr>
-                          <tr>
-                            <th>T</th>
-                            <td class="c_h"><span>台湾</span><span>天津</span></td>
-                          </tr>
-                          <tr>
-                            <th>X</th>
-                            <td class="c_h"><span>西藏</span><span>香港</span><span>新疆</span></td>
-                          </tr>
-                          <tr>
-                            <th>Y</th>
-                            <td class="c_h"><span>云南</span></td>
-                          </tr>
-                          <tr>
-                            <th>Z</th>
-                            <td class="c_h"><span>浙江</span></td>
-                          </tr>
-                        </table>
-                    </div>
-                </div>
-            </span>
-        </span>
-        <!--End 所在收货地区 End-->
-        <span class="fr">
-        	<span class="fl">你好，请<a href="Login.html">登录</a>&nbsp; <a href="Regist.html" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<a href="#">我的订单</a>&nbsp;|</span>
-        	<span class="ss">
-            	<div class="ss_list">
-                	<a href="#">收藏夹</a>
-                    <div class="ss_list_bg">
-                    	<div class="s_city_t"></div>
-                        <div class="ss_list_c">
-                        	<ul>
-                            	<li><a href="#">我的收藏夹</a></li>
-                                <li><a href="#">我的收藏夹</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="ss_list">
-                	<a href="#">客户服务</a>
-                    <div class="ss_list_bg">
-                    	<div class="s_city_t"></div>
-                        <div class="ss_list_c">
-                        	<ul>
-                            	<li><a href="#">客户服务</a></li>
-                                <li><a href="#">客户服务</a></li>
-                                <li><a href="#">客户服务</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="ss_list">
-                	<a href="#">网站导航</a>
-                    <div class="ss_list_bg">
-                    	<div class="s_city_t"></div>
-                        <div class="ss_list_c">
-                        	<ul>
-                            	<li><a href="#">网站导航</a></li>
-                                <li><a href="#">网站导航</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </span>
-            <span class="fl">|&nbsp;关注我们：</span>
-            <span class="s_sh"><a href="#" class="sh1">新浪</a><a href="#" class="sh2">微信</a></span>
-            <span class="fr">|&nbsp;<a href="#">手机版&nbsp;<img src="../assets/images/s_tel.png" align="absmiddle" /></a></span>
-        </span>
-      </div>
-    </div>
+
     <div class="top">
       <div class="logo"><a href="Index.html"><img src="../assets/images/logo.png" /></a></div>
+
       <div class="search">
         <form>
           <input type="text" value="" class="s_ipt" />
@@ -175,7 +52,8 @@
             <ul>
               <li v-for="cates in cate">
                 <div class="fj">
-                  <span class="n_img"><span></span><img src="../assets/images/nav1.png" /></span>
+                  <span class="n_img" ><span></span><img src="../assets/images/nav1.png" /></span>
+
                   <span class="fl">{{cates.name}}</span>
                 </div>
                 <div class="zj">
@@ -539,83 +417,6 @@
       </div>
       <!--END 热门商品 END -->
 
-      <!--Begin 限时特卖 Begin-->
-      <!--
-      <div class="i_t mar_10">
-        <span class="fl">限时特卖</span>
-          <span class="i_mores fr"><a href="#">更多</a></span>
-      </div>
-      <div class="content">
-
-          <div class="sell_right">
-            <div class="sell_1">
-                <div class="s_img"><a href="#"><img src="images/tm_1.jpg" width="185" height="155" /></a></div>
-                <div class="s_price">￥<span>89</span></div>
-                  <div class="s_name">
-                    <h2><a href="#">沙宣洗发水</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-              <div class="sell_2">
-                <div class="s_img"><a href="#"><img src="images/tm_2.jpg" width="185" height="155" /></a></div>
-                <div class="s_price">￥<span>289</span></div>
-                  <div class="s_name">
-                    <h2><a href="#">德芙巧克力</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-              <div class="sell_b1">
-                <div class="sb_img"><a href="#"><img src="images/tm_b1.jpg" width="242" height="356" /></a></div>
-                <div class="s_price">￥<span>289</span></div>
-                  <div class="s_name">
-                    <h2><a href="#">东北大米</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-
-              <div class="sell_3">
-                <div class="s_img"><a href="#"><img src="images/tm_3.jpg" width="185" height="155" /></a></div>
-                <div class="s_price">￥<span>289</span></div>
-                  <div class="s_name">
-                    <h2><a href="#">迪奥香水</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-              <div class="sell_4">
-                <div class="s_img"><a href="#"><img src="images/tm_4.jpg" width="185" height="155" /></a></div>
-                <div class="s_price">￥<span>289</span></div>
-                  <div class="s_name">
-                    <h2><a href="#">美妆</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-              <div class="sell_b2">
-                <div class="sb_img"><a href="#"><img src="images/tm_b2.jpg" width="242" height="356" /></a></div>
-                <div class="s_price">￥<span>289</span></div>
-                  <div class="s_name">
-                    <h2><a href="#">美妆</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-              <div class="sell_1">
-                  <div class="s_img"><a href="#"><img src="images/tm_1.jpg" width="185" height="155" /></a></div>
-                  <div class="s_price">￥<span>89</span></div>
-                  <div class="s_name">
-                      <h2><a href="#">沙宣洗发水</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-              <div class="sell_2">
-                  <div class="s_img"><a href="#"><img src="images/tm_2.jpg" width="185" height="155" /></a></div>
-                  <div class="s_price">￥<span>289</span></div>
-                  <div class="s_name">
-                      <h2><a href="#">德芙巧克力</a></h2>
-                      倒计时：<span>1200</span> 时 <span>30</span> 分 <span>28</span> 秒
-                  </div>
-              </div>
-          </div>
-      </div>
-      -->
       <!--End 限时特卖 End-->
       <div class="content mar_20">
         <img src="../assets/images/mban_1.jpg" width="1200" height="110" />
@@ -625,17 +426,17 @@
       <div class="i_t mar_10" >
         <span class="floor_num">1F</span>
         <span class="fl">{{key}}</span>
-        <span class="i_mores fr"><a href="#">进口咖啡</a>&nbsp; &nbsp; &nbsp; <a href="#">进口酒</a>&nbsp; &nbsp; &nbsp; <a href="#">进口母婴</a>&nbsp; &nbsp; &nbsp; <a href="#">新鲜蔬菜</a>&nbsp; &nbsp; &nbsp; <a href="#">新鲜水果</a></span>
+        <span class="i_mores fr"><a href="#"></a>&nbsp; &nbsp; &nbsp; <a href="#">进口酒</a>&nbsp; &nbsp; &nbsp; <a href="#">进口母婴</a>&nbsp; &nbsp; &nbsp; <a href="#">新鲜蔬菜</a>&nbsp; &nbsp; &nbsp; <a href="#">新鲜水果</a></span>
       </div>
       <div class="content">
         <div class="fresh_mid">
           <ul>
             <li v-for="name in value">
-              <div class="name"><a href="#">{{name}}</a></div>
+              <div class="name"><a href="#">{{name[0]}}</a></div>
               <div class="price">
                 <font>￥<span>198.00</span></font> &nbsp; 26R
               </div>
-              <div class="img"><a href="#"><img src="../assets/images/fre_1.jpg" width="185" height="155" /></a></div>
+              <router-link :to="{path:  '/product', query:{goods_id:name[1]}}"><div class="img"><a><img src="../assets/images/fre_1.jpg" width="185" height="155" /></a></div></router-link>
             </li>
             <li>
               <div class="name"><a href="#">新鲜美味  进口美食</a></div>
@@ -909,18 +710,20 @@
             return {
                 msg: [],
                 cate:22,
-                floor:[]
+                floor:[],
+                name:'',
+                price:'',
             }
         },
         mounted () {
 
-            axios.get('http://localhost/laravel/blog/public/home/tree')
+            axios.get(this.url+'/tree')
                 .then(response => (this.cate = response.data))
                 .catch(function (error) {
                     console.log(error);
                 });
 
-            axios.get('http://localhost/laravel/blog/public/home/tree1')
+            axios.get(this.url+'/tree1')
                 .then(response => (this.floor = response.data))
                 .catch(function (error) {
                     console.log(error);
