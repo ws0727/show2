@@ -1,6 +1,5 @@
 <template>
   <div>
-    {{cart}}
     <div class="top">
       <div class="logo"><a href="Index.html"><img src="../assets/images/logo.png" /></a></div>
       <div class="search">
@@ -290,7 +289,7 @@
         </div>
         <!--End 商品分类详情 End-->
         <ul class="menu_r">
-          <li> <router-link to="/show"> <a>首页</a></router-link></li>
+          <li><a href="Index.html">首页</a></li>
           <li><a href="Food.html">美食</a></li>
           <li><a href="Fresh.html">生鲜</a></li>
           <li><a href="HomeDecoration.html">家居</a></li>
@@ -305,204 +304,43 @@
     <!--End Menu End-->
     <div class="i_bg">
       <div class="content mar_20">
-        &nbsp;<router-link to="/buycart"> <img src="../assets/images/img2.jpg" /></router-link>
+        <img src="../assets/images/img3.jpg" />
       </div>
 
-      <!--Begin 第二步：确认订单信息 Begin -->
+      <!--Begin 第三步：提交订单 Begin -->
       <div class="content mar_20">
-        <div class="two_bg">
-          <div class="two_t">
-            <span class="fr"><a href="#">修改</a></span>商品列表
-          </div>
-          <table border="0" class="car_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="car_th" width="550">商品名称</td>
-              <td class="car_th" width="140">属性</td>
-              <td class="car_th" width="150">购买数量</td>
-              <td class="car_th" width="130">小计</td>
-              <td class="car_th" width="140">返还积分</td>
+
+        <!--Begin 支付宝支付 Begin -->
+        <div class="warning">
+          <table border="0" style="width:1000px; text-align:center;" cellspacing="0" cellpadding="0">
+            <tr height="35">
+              <td style="font-size:18px;">
+                感谢您在本店购物！您的订单已提交成功，请记住您的订单号: <font color="#ff4e00">{{order_id}}</font>
+              </td>
             </tr>
-            <tr v-for=" (value ,key) in  cart ">
+            <tr>
+              <td style="font-size:14px; font-family:'宋体'; padding:10px 0 20px 0; border-bottom:1px solid #b6b6b6;">
+                您选定的配送方式为: <font color="#ff4e00">申通快递</font>； &nbsp; &nbsp;您选定的支付方式为: <font color="#ff4e00">支付宝</font>； &nbsp; &nbsp;您的应付款金额为: <font color="#ff4e00">￥{{price}}</font>&nbsp;{{time}}
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px 0 30px 0; font-family:'宋体';">
+                支付宝网站(www.alipay.com) 是国内先进的网上支付平台。<br />
+                支付宝收款接口：在线即可开通，零预付，免年费，单笔阶梯费率，无流量限制。<br />
+              </td>
+            </tr>
+            <tr>
               <td>
-                <div class="c_s_img"><img src="../assets/images/c_1.jpg" width="73" height="73" id="name" /></div>
-                {{value[0].g_name}}
-
-              </td>
-              <td align="center" id="details">{{value[0].details}}</td>
-              <td align="center">{{value[0].num}}</td>
-              <td align="center" style="color:#ff4e00;">￥{{value[0].price}}</td>
-              <td align="center">26R</td>
-            </tr>
-            <tr>
-              <td colspan="5" align="right" style="font-family:'Microsoft YaHei';">
-                商品总价：￥1899.00 ； 返还积分 56R
+                <div class="btn_u" style="margin:0 auto; padding:0 20px; width:120px;"><a>支付成功</a></div>
+                <a>首页</a> &nbsp; &nbsp; <a>用户中心</a>
               </td>
             </tr>
           </table>
-
-          <div class="two_t">
-            <span class="fr"><a href="#">修改</a></span>收货人信息
-          </div>
-          <table border="0" class="peo_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="p_td" width="160">收货人</td>
-              <td width="395">{{address.name}}</td>
-              <td class="p_td" width="160">电子邮件</td>
-              <td width="395">{{address.email}}</td>
-            </tr>
-            <tr>
-              <td class="p_td">详细信息</td>
-              <td>{{address.address}}</td>
-              <td class="p_td">邮政编码</td>
-              <td>{{address.code}}</td>
-            </tr>
-            <tr>
-              <td class="p_td">电话</td>
-              <td>{{address.phone_d}}</td>
-              <td class="p_td">手机</td>
-              <td>{{address.phone}}</td>
-            </tr>
-          </table>
-
-
-          <div class="two_t">
-            配送方式
-          </div>
-          <table border="0" class="car_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="car_th" width="80"></td>
-              <td class="car_th" width="200">名称</td>
-              <td class="car_th" width="370">订购描述</td>
-              <td class="car_th" width="150">费用</td>
-              <td class="car_th" width="135">免费额度</td>
-              <td class="car_th" width="175">保价费用</td>
-            </tr>
-            <tr >
-              <td align="center"><input type="checkbox" name="ch" checked="checked" /></td>
-              <td align="center" style="font-size:14px;"><b>申通快递</b></td>
-              <td>江、浙、沪地区首重为15元/KG，其他地区18元/KG，续重均为5-6元/KG， 云南地区为8元</td>
-              <td align="center">￥15.00</td>
-              <td align="center">￥0.00</td>
-              <td align="center">不支持保价</td>
-            </tr>
-            <tr>
-              <td align="center"><input type="checkbox" name="ch" /></td>
-              <td align="center" style="font-size:14px;"><b>城际快递</b></td>
-              <td>运费固定</td>
-              <td align="center">￥15.00</td>
-              <td align="center">￥0.00</td>
-              <td align="center">不支持保价</td>
-            </tr>
-            <tr>
-              <td align="center"><input type="checkbox" name="ch" /></td>
-              <td align="center" style="font-size:14px;"><b>邮局平邮</b></td>
-              <td>运费固定</td>
-              <td align="center">￥15.00</td>
-              <td align="center">￥0.00</td>
-              <td align="center">不支持保价</td>
-            </tr>
-            <tr>
-              <td colspan="6">
-                <span class="fr"><label class="r_rad"><input type="checkbox" name="baojia" /></label><label class="r_txt">配送是否需要保价</label></span>
-              </td>
-            </tr>
-          </table>
-
-          <div class="two_t">
-            支付方式
-          </div>
-          <ul class="pay">
-            <li class="checked">余额支付<div class="ch_img"></div></li>
-            <li>银行亏款/转账<div class="ch_img"></div></li>
-            <li>货到付款<div class="ch_img"></div></li>
-            <li>支付宝<div class="ch_img"></div></li>
-          </ul>
-
-          <div class="two_t">
-            商品包装
-          </div>
-          <table border="0" class="car_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="car_th" width="80"></td>
-              <td class="car_th" width="490">名称</td>
-              <td class="car_th" width="180">费用</td>
-              <td class="car_th" width="180">免费额度</td>
-              <td class="car_th" width="180">图片</td>
-            </tr>
-            <tr>
-              <td align="center"><input type="checkbox" name="pack" checked="checked" /></td>
-              <td><b style="font-size:14px;">不要包装</b></td>
-              <td align="center">￥15.00</td>
-              <td align="center">￥0.00</td>
-              <td align="center"></td>
-            </tr>
-            <tr>
-              <td align="center"><input type="checkbox" name="pack" /></td>
-              <td><b style="font-size:14px;">精品包装</b></td>
-              <td align="center">￥15.00</td>
-              <td align="center">￥0.00</td>
-              <td align="center"><a href="#" style="color:#ff4e00;">查看</a></td>
-            </tr>
-          </table>
-
-          <div class="two_t">
-            祝福贺卡
-          </div>
-          <table border="0" class="car_tab" style="width:1110px;" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="car_th" width="80"></td>
-              <td class="car_th" width="490">名称</td>
-              <td class="car_th" width="180">费用</td>
-              <td class="car_th" width="180">免费额度</td>
-              <td class="car_th" width="180">图片</td>
-            </tr>
-            <tr>
-              <td align="center"><input type="checkbox" name="wish" checked="checked" /></td>
-              <td><b style="font-size:14px;">不要贺卡</b></td>
-              <td align="center">￥15.00</td>
-              <td align="center">￥0.00</td>
-              <td align="center"></td>
-            </tr>
-            <tr>
-              <td align="center" style="border-bottom:0; padding-bottom:0;"><input type="checkbox" name="wish" /></td>
-              <td style="border-bottom:0; padding-bottom:0;"><b style="font-size:14px;">祝福贺卡</b></td>
-              <td align="center" style="border-bottom:0; padding-bottom:0;">￥15.00</td>
-              <td align="center" style="border-bottom:0; padding-bottom:0;">￥0.00</td>
-              <td align="center" style="border-bottom:0; padding-bottom:0;"><a href="#" style="color:#ff4e00;">查看</a></td>
-            </tr>
-            <tr valign="top">
-              <td align="center"></td>
-              <td colspan="4">
-                <span class="fl"><b style="font-size:14px;">祝福语：</b></span>
-                <span class="fl"><textarea class="add_txt" style="width:860px; height:50px;"></textarea></span>
-              </td>
-            </tr>
-          </table>
-
-          <div class="two_t">
-            其他信息
-          </div>
-
-          <table border="0" style="width:900px; margin-top:20px;" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right">
-                该订单完成后，您将获得 <font color="#ff4e00">1815</font> 积分 ，以及价值 <font color="#ff4e00">￥0.00</font> 的红包 <br />
-                商品总价: <font color="#ff4e00">￥1815.00</font>  + 配送费用: <font color="#ff4e00">￥15.00</font>
-              </td>
-            </tr>
-            <tr height="70">
-              <td align="right">
-                <b style="font-size:14px;">应付款金额：<span style="font-size:22px; color:#ff4e00;">￥2899</span></b>
-              </td>
-            </tr>
-            <tr height="70">
-              <td align="right"><a v-on:click="add"><img src="../assets/images/btn_sure.gif" /></a></td>
-            </tr>
-          </table>
-
         </div>
+        <!--Begin 支付宝支付 Begin -->
+
       </div>
-      <!--End 第二步：确认订单信息 End-->
+      <!--End 第三步：提交订单 End-->
 
 
       <!--Begin Footer Begin -->
@@ -588,55 +426,24 @@
       </div>
       <!--End Footer End -->
     </div>
-
   </div>
 </template>
+
 <script>
     export default {
-        name: "Cart_Two",
+        name: "Buytree",
         data (){
             return{
-                mg:this.$route.params,
-                cart:[],
-                address:'',
-                cart1:'',
-
+               order_id:'',
+               price:'',
+               time:'',
             }
-
         },
-        methods: {
-            add() {
-                axios.post(this.url + '/auth/add', {
-                    h_id: this.mg,
-                    token: localStorage.getItem("access_token")
-                })
-                    .then(res => {
-                        var token=localStorage.getItem("access_token")
-                        location.href="http://localhost/laravel/laravel/public/api/pay/index?token="+token+"&id="+res.data
-
-                    });
-                }
-            },
-            mounted() {
-                // console.log(this.mg)
-                axios.post(this.url + '/auth/cart_two', {
-                    h_id: this.mg,
-                    token: localStorage.getItem("access_token")
-                })
-                    .then(res => {
-                        this.cart = res.data
-                    });
-
-                axios.post(this.url + '/auth/cart_two1', {
-                    h_id: this.mg,
-                    token: localStorage.getItem("access_token")
-                })
-                    .then(res => {
-                        // console.log(res)
-                        this.address = res.data[0]
-                    });
-            },
-
+      mounted() {
+            this.order_id=this.$route.query.order_id,
+                this.price=this.$route.query.price,
+                this.time=this.$route.query.time
+       }
     }
 </script>
 

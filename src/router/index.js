@@ -9,6 +9,7 @@ import Product from '@/components/Product'
 import Buycart from '@/components/Buycart'
 import Cart_Two from '@/components/Cart_Two'
 import Member_Address from '@/components/Member_Address'
+import Buytree from '@/components/Buytree'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
       path: '/member_address',
       name: 'Member_Address',
       component:Member_Address
+    },
+    {
+      path: '/buytree',
+      name: 'Buytree',
+      component:Buytree
     }
   ]
 })
